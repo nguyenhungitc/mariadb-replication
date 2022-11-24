@@ -10,6 +10,7 @@ services:
       - ./init.sql:/docker-entrypoint-initdb.d/init.sql:ro
       - ./first-host.cnf:/etc/mysql/mariadb.conf.d/90-replication.cnf:ro
     network_mode: host
+    restart: always
     environment:
       MARIADB_ROOT_PASSWORD: *****
       MARIADB_REPL_USER: repluser
