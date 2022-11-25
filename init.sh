@@ -20,5 +20,5 @@ MASTER_PASSWORD='$MARIADB_REPL_PASSWORD', MASTER_LOG_FILE='$master_log', MASTER_
 start slave;"
 
 echo
-ehco "Finish deployed, check replication status with mysql command 'SHOW SLAVE STATUS\G;"
+echo "Finish deployed, check replication status with mysql command 'SHOW SLAVE STATUS\G;"
 echo
