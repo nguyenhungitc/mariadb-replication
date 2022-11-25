@@ -7,7 +7,6 @@ services:
     volumes:
       - /opt/mariadb:/var/lib/mysql
       - ./init.sh:/init.sh:ro
-      - ./init.sql:/docker-entrypoint-initdb.d/init.sql:ro
       - ./first-host.cnf:/etc/mysql/mariadb.conf.d/90-replication.cnf:ro
     network_mode: host
     restart: always
